@@ -1,0 +1,117 @@
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+    }
+    h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .search input[type="text"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+    }
+
+    .search input[type="submit"] {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .search input[type="submit"]:hover {
+    background-color: #2563eb;
+    }
+    .search input[type="submit"]:active{
+        background-color: #13347b;
+    }
+    .search {
+        margin-top: -100px; 
+    }
+    .info {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+  max-width: 400px;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info img {
+  width: 80px;
+  height: 80px;
+}
+
+.info p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.info {
+  display: none;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+#suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+}
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+#suggestions li:hover {
+  background-color: #eee;
+}
