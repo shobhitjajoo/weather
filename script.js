@@ -5,8 +5,7 @@ const infoDiv = document.querySelector(".info");
 infoDiv.style.display = "none";
 
 function fetchWeather(city) {
-  const apiKey = 'af58ec79b78424a8159f6b5ecfde51bd'; 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const url = `http://localhost:3000/weather?city=${city}`;
 
   fetch(url)
     .then(response => {
