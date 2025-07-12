@@ -5,7 +5,7 @@ const infoDiv = document.querySelector(".info");
 infoDiv.style.display = "none";
 
 function fetchWeather(city) {
-  const url = `http://localhost:3000/weather?city=${city}`;
+  const url = `https://weather-zzrf.onrender.com/weather?city=${city}`;
 
   fetch(url)
     .then(response => {
